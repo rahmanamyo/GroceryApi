@@ -48,7 +48,7 @@ namespace GroceryStoreAPI.Controllers.v1
         [HttpGet(ApiRoutes.Customers.Get)]
         public IActionResult Get([FromRoute] int customerId)
         {
-            throw new Exception("test");
+            //throw new Exception("Dummy Exception");
             var customer = _customerService.GetCustomerById(customerId);
 
             if (customer == null)

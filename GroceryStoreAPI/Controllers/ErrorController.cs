@@ -7,7 +7,7 @@ namespace GroceryStoreAPI.Controllers
     [ApiController]
     public class ErrorController : ControllerBase
     {
-        [Route("/error")]
+        [HttpGet, Route("/error")]
         public IActionResult Error()
         {
             var exception = HttpContext.Features.Get<IExceptionHandlerFeature>();
